@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Name: {{feed.name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+	    <div class="col-xs-12">
+	    Description: {{feed.description}}
+	    </div>
+    </div>
+    <div class="row">
+	    <div class="col-xs-6">
+	    Lat: {{feed.location.latitude}}
+	    </div>
+	    <div class="col-xs-6">
+	    Long: {{feed.location.longitude}}
+	    </div>
+    </div>
+    <div class="row" ng-repeat="stream in feed.streams">
+	    <div class="col-xs-12">
+	    Stream: {{stream.name}}
+	    </div>
+    </div>
+    <div class="row" ng-repeat="trigger in feed.triggers">
+	    <div class="col-xs-12">
+	    Trigger: {{trigger.name}}
+	    </div>
+    </div>
+  </div>
+</div>

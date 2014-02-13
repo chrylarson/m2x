@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h3>Triggers</h3>
+
+		<div class="col-xs-12 col-sm-8">
+			<div class="repeat-item" ng-repeat="trigger in triggers.triggers track by trigger.id">
+				<trigger index="$index">
+					
+				</trigger>
+			</div>
+			<div style="cursor:pointer">
+				<pagination total-items="triggers.total" items-per-page="triggers.limit" page="triggers.current_page" boundary-links="true" rotate="false">
+				</pagination>
+			</div>
+		</div>
+	</div>
+</div>
